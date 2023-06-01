@@ -3,24 +3,54 @@
     "id": 1,
     "name": "Book",
     "price": 10.99,
-    "imgUrl": "/imgs/book.jpg"
+    "imgUrl": "src/assets/imgs/books.jpg"
   },
   {
     "id": 2,
     "name": "Computer",
     "price": 1199,
-    "imgUrl": "/imgs/computer.jpg"
+    "imgUrl": "src/assets/imgs/computer.jpg"
   },
   {
     "id": 3,
     "name": "Banana",
     "price": 1.05,
-    "imgUrl": "/imgs/banana.jpg"
+    "imgUrl": "src/assets/imgs/banana.jpg"
   },
   {
     "id": 4,
     "name": "Car",
     "price": 14000,
-    "imgUrl": "/imgs/car.jpg"
+    "imgUrl": "src/assets/imgs/car.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Pineapple",
+    "price": 4,
+    "imgUrl": "src/assets/imgs/pineapple.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Cherry",
+    "price": 5,
+    "imgUrl": "src/assets/imgs/cherry.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Orange",
+    "price": 1.4,
+    "imgUrl": "src/assets/imgs/orange.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Strawberry",
+    "price": 2.5,
+    "imgUrl": "src/assets/imgs/strawberry.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Apple",
+    "price": 0.5,
+    "imgUrl": "src/assets/imgs/apple.jpg"
   }
 ]
