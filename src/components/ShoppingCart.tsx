@@ -1,4 +1,4 @@
-import { Offcanvas, Stack } from "react-bootstrap"
+import { Button, Offcanvas, Stack } from "react-bootstrap"
 import { useShoppingCart } from "../context/ShoppingCartContext"
 import { formatCurrency } from "../utilities/formatCurrency"
 import { CartItem } from "./CartItem"
@@ -10,7 +10,8 @@ type ShoppingCartProps = {
 
 // This is the slide panel on the right side when clicking shopping cart
 export function ShoppingCart({ isOpen }: ShoppingCartProps) {
-  const { closeCart, cartItems } = useShoppingCart()
+  const { closeCart, cartItems, removeAllItems } = useShoppingCart()
+
   return (
     <Offcanvas show={isOpen} onHide={closeCart} placement="end">
       <Offcanvas.Header closeButton>
@@ -30,6 +31,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
               }, 0)
             )}
           </div>
+          <Button variant="outline-danger" onClick={() => removeAllItems()}>Remove all</Button>
         </Stack>
       </Offcanvas.Body>
     </Offcanvas>

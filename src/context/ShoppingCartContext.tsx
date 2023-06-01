@@ -18,6 +18,7 @@ type ShoppingCartContext = {
   increaseCartQuantity: (id: number) => void
   decreaseCartQuantity: (id: number) => void
   removeFromCart: (id: number) => void
+  removeAllItems: () => void
   cartQuantity: number
   cartItems: CartItem[]
 }
@@ -86,6 +87,9 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
       return currItems.filter(item => item.id !== id)
     })
   }
+  function removeAllItems() {
+    setCartItems([]);
+  }
 
   return (
     <ShoppingCartContext.Provider
@@ -94,6 +98,7 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
         increaseCartQuantity,
         decreaseCartQuantity,
         removeFromCart,
+        removeAllItems,
         openCart,
         closeCart,
         cartItems,
